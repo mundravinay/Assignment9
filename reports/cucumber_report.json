@@ -1,0 +1,92 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "assignmet9partb;correct-non-zero-number-of-books-found-by-autor",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Correct non-zero number of books found by autor",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "author"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Devil in the White City",
+                      "Erik Larson"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Lion, the Witch and the Wardobe",
+                      "C.C. Lewis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "In the Garden of Beasts",
+                      "Erik Larson"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I have the following books in the store",
+            "match": {
+              "location": "features\\support\\assignmet9PartB.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2855299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I search for books by author \"Erik Larson\"",
+            "match": {
+              "location": "features\\support\\assignmet9PartB.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 412499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should find 2 books",
+            "match": {
+              "location": "features\\support\\assignmet9PartB.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 367000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "assignmet9partb",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Assignmet9PartB",
+    "tags": [],
+    "uri": "features\\assignmet9PartB.feature"
+  }
+]

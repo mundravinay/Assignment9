@@ -1,0 +1,15 @@
+{
+    "default": {
+        "format": ["progress",
+        "json:./reports/cucumber_report.json",
+        "html:./reports/cucumber_report.html"
+        ],
+        "require": [
+            "features/support/**/*.ts",
+            "features/support/*.js"
+        ],
+        "requireModule": [
+            "ts-node/register"
+        ]
+    }
+}

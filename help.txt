@@ -1,0 +1,67 @@
+/* CUCUMBER : BDD framework that enables collboration bewteen dev , testers and BA. Non technical way */  
+/*Configration of Cucumber */ 
+
+/* Scenario: Addition of two numbers 
+        Given the numbers are 5 and 6 
+        When both the numbers are added
+        Then result should be 11 */ 
+
+// Feature File 
+// Step defination file => behide the scene code 
+//configuration 
+
+
+STEP 1 => pacakage.json => Terminal => npm init -y
+STEP 2 => https://www.npmjs.com/package/@cucumber/cucumber => npm i @cucumber/cucumber
+STEP 3 => complie => npm i ts-node 
+STEP 4 => npm i chai @types/chai
+STEP 5 => Create Cucumber Configuration file in the root folder  => cucumber.json 
+
+                            {
+                "default": {
+                    "require": [
+                        "features/support/**/*.ts",
+                        "features/support/*.js"
+                    ],
+                    "requireModule": [
+                        "ts-node/register"
+                    ]
+                }
+            }
+
+STEP 6 => create tsconfig.json file => tsc --init
+STEP 7 => Install cucumber Plugin => Extension =>  Cucumber (Gherkin) Full Support by Alexander Krechik ( if not installed )
+STEP 8 => Create a feature folder and feature file with extension .feature
+            Ex : Feature: : Example feature
+                    Scenario: Count array elements
+                        Given array is empty
+                        Then the length of array should be 0
+                        When the array is loaded with elements 2,3,4
+                        Then    tyhe length of array should be 3 
+
+STEP 9=> update package.json =>   "scripts": {  
+                                        "test": "cucumber-js" } 
+
+STEP 10=> Create folder=> .vscode and file settings.json and add below code 
+    {
+    "cucumberautocomplete.steps": [
+        "features/steps/**/*steps.ts"
+    ],
+    "cucumberautocomplete.strictGherkinCompletion": true
+}
+
+STEP 11 => Create Step defiantion 
+          STEP 7a: npm run test  // thi si generate step defination 
+          STEP 7b: Create Step defination folder and file 
+                   Ex:
+
+                   import { Given, When, Then } from "@cucumber/cucumber";
+                   import { expect } from "chai";
+                   
+
+
+STEP 12 => Terminal => npm  run test 
+STEP 13 => Step defination => create step defination file and import 
+                import { Given, When, Then } from "@cucumber/cucumber";
+                import { expect } from 'chai';
+
