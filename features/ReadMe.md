@@ -28,3 +28,4 @@ Before you begin, ensure you have met the following requirements:
 To execute the tests, run the following command:
 ```sh
 npm run test
+test
